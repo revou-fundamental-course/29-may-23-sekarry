@@ -1,0 +1,260 @@
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    font-family: 'Josefin Sans', sans-serif;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;   
+    padding: 0% 3%; 
+    border-bottom: 1px solid black;
+}
+
+.main-logo {
+    height: 90px;
+    width: 120px;
+    object-fit: contain;
+}
+
+.nav-bar {
+    display: flex;
+    border: 1px solid black;
+    border-radius: 5px;
+}
+
+.nav-item {
+    padding: 5px 1em;
+    width: 100px;
+    border-right: 1px solid black;
+    text-align: center;
+    cursor: pointer;
+    text-decoration: none;
+    color: black;
+}
+
+.nav-item:hover {
+    background: #d42488;
+}
+
+.nav-item:last-child {
+    border-right: none;
+}
+
+hr {
+    border: 0.5px solid black;
+    box-shadow: 0 2px 4px 0 rgba(1, 1, 1, 0.2);
+}
+
+.hero-container {
+    display: flex;
+    height: 578px;
+    padding: 0 0 0 10%;
+    border-bottom: 1px solid black;
+}
+
+.hero-container > div {
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+}
+
+.hero-container > img {
+    width: 70%;
+    height: 350px;
+    align-self: center;
+}
+
+.hero-container h1 {
+    font-size: 40px;
+}
+
+.hero-container p {
+    font-size: 25px;
+    margin-top: 0;
+}
+
+.wrapper {
+    display: flex;
+}
+
+.headquarters-container {
+    display: flex;
+    flex-direction: column;
+    padding: 0 10%;
+    height: 320px;
+    border-top: 1px solid black;
+    border-bottom: 1px solid black;
+    margin-top: 0.4%;
+}
+
+.headquarters-section > h1 {
+    font-size: 40px;
+}
+
+.headquarters-image-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 1em 4em 0em 4em;
+}
+
+.headquarters-image {
+    height: 8em;
+    width: 8em;
+    border-radius: 50%;
+}
+
+.headquarters-image > img {
+    height: 8em;
+    width: 8em;
+    border-radius: 50%;
+}
+
+.headquarters-image-container > p {
+    font-size: 25px;
+}
+
+.message-us-container {
+    display: flex;
+    height: 400px;
+    padding: 0 0 4% 10%;
+}
+
+.message-us-section > h1 {
+    font-size: 40px;
+}
+
+#name-input {
+    width: 100%;
+}
+
+#email-input {
+    width: 100%;
+}
+
+#phone-number-input {
+    width: 100%;
+}
+
+#message-input {
+    resize: none;
+    width: 100%;
+}
+
+.message-us-container > .message-us-section {
+    flex: 50%;
+}
+
+.block {
+    display: flex;
+    justify-content: center;
+    width: 83.5%;
+    font-family: 'Josefin Sans', sans-serif;
+}
+
+.block:hover {
+    background: #d42488;
+    cursor: pointer;
+}
+
+.message-us-container > .message-us-show {
+    flex: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-left: 15%;
+    padding-top: 4%;
+    font-size: 16px;
+}
+
+footer {
+    display: flex;
+    text-align: end;
+    border-top: 1px solid  black;
+    height: 60px;
+    padding-right: 8%;
+    justify-content: end;
+}
+
+@media only screen and (max-width: 600px) {
+    header {
+        flex-wrap: wrap;
+        flex-direction: column;
+        padding-bottom: 2%;
+    }
+
+    header > img {
+        padding-bottom: 3%;
+        padding-top: 2%;
+    }
+
+    header > div {
+        flex-wrap: wrap;
+        flex-direction: column;
+    }
+
+    .nav-bar > .nav-item {
+        border-right: none;
+        border-top: 1px solid black;
+    }
+
+    .nav-item:first-child {
+        border-top: none;
+    }
+
+    .hero-container {
+        flex-wrap: wrap;
+    }
+
+    .hero-container > div {
+        width: 100%;
+    }
+
+    .hero-container > img {
+        width: 100%;
+    }
+
+    .headquarters-container {
+        height: 100%;
+    }
+
+    .headquarters-section > h1 {
+        display: flex;
+        justify-content: center;
+    }
+
+    .wrapper {
+        flex-wrap: wrap;
+        grid-template-columns: 1fr;
+    }
+
+    .wrapper > div {
+        width: 100%;
+    }
+
+    .message-us-container {
+        flex-wrap: wrap;
+        padding-right: 10%;
+        height: 100%;
+    }
+
+    .message-us-container > .message-us-section {
+        width: 100%;
+    }
+
+    .message-us-container > .message-us-show {
+        width: 100%;
+    }
+
+    .message-us-section > h1 {
+        display: flex;
+        justify-content: center;
+    }
+}
